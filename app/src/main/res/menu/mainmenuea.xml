@@ -1,0 +1,61 @@
+
+<menu xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <item
+        android:id="@+id/menu"
+        android:icon="@drawable/m"
+        android:title=""
+        app:showAsAction="always|withText|collapseActionView">
+
+        <menu xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto">
+            <item
+                android:id="@+id/home"
+                android:icon="@drawable/home"
+                android:title="Home"
+                app:showAsAction="always|withText|collapseActionView"/>
+
+            <item
+                android:id="@+id/Drivers"
+                android:icon="@drawable/driving"
+                android:title="Drivers"
+                app:showAsAction="always|withText|collapseActionView"/>
+            <item
+                android:id="@+id/admins"
+                android:icon="@drawable/admins"
+                android:title="Admins"
+                app:showAsAction="always|withText|collapseActionView"/>
+            <item
+                android:id="@+id/Passengers"
+                android:icon="@drawable/user"
+                android:title="Passengers"
+                app:showAsAction="always|withText|collapseActionView"/>
+            <item
+                android:id="@+id/bookings"
+                android:icon="@drawable/bookings"
+                android:title="Bookings"
+                app:showAsAction="always|withText|collapseActionView"/>
+            <item
+                android:id="@+id/Emails"
+                android:icon="@drawable/email"
+                android:title="Send Emails"
+                app:showAsAction="always|withText|collapseActionView"/>
+            <item
+                android:id="@+id/support"
+                android:icon="@drawable/i"
+                android:title="Support"
+                app:showAsAction="always|withText|collapseActionView"/>
+
+
+            <item
+                android:id="@+id/logout"
+                android:icon="@drawable/out"
+                android:title="Logout"
+                app:showAsAction="always|withText|collapseActionView"/>
+        </menu>
+        </item>
+
+</menu>

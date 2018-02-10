@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:layout_width="300dp"
+        android:layout_height="80dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+      >
+
+        <TextView
+            android:text="Name:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"/>
+        <TextView
+            android:text=""
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/name"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="55dp"
+            android:textSize="13sp"/>
+
+
+        <TextView
+            android:text="ID number:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView1"
+            android:layout_marginTop="40dp"
+            android:layout_marginLeft="10dp"
+            />
+        <TextView
+            android:text=""
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/id"
+            android:layout_marginTop="40dp"
+            android:layout_marginLeft="85dp"
+            android:textSize="13sp"/>
+
+
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:id="@+id/v"
+            android:layout_marginTop="48dp"
+            android:layout_marginLeft="260dp"
+            app:srcCompat="@drawable/idc" />
+
+        <TextView
+            android:text=""
+            android:layout_width="150dp"
+            android:layout_height="3dp"
+            android:id="@+id/tv"
+            android:layout_marginTop="77dp"
+          android:background="@drawable/border"
+            android:layout_marginLeft="80dp"
+            android:textSize="13sp"/>
+
+    </FrameLayout>
+
+</LinearLayout>

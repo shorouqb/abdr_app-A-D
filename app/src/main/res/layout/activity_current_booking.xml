@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_current_booking"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".current_booking"
+    android:gravity="center">
+
+    <TextView
+        android:text="No current booking at the moment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:id="@+id/tv0"
+        android:textSize="17dp"/>
+
+    <TextView
+    android:text="Booking status"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerHorizontal="true"
+    android:layout_alignParentTop="true"
+    android:id="@+id/tv1"
+    android:textSize="17dp"/>
+    <TextView
+        android:text=""
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/textViewstatus"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/tv1"
+        android:textSize="15dp"/>
+
+
+
+
+    <Button
+        android:text="Contact Passenger "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/contact_btn"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/textViewstatus"
+    android:layout_centerHorizontal="true"/>
+    <Button
+        android:text="Passenger Location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/loc_btn"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/contact_btn"
+        android:layout_centerHorizontal="true"/>
+
+    <GridView
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:id="@+id/familygrid"
+        android:columnWidth="100dp"
+        android:numColumns="1"
+        android:background="@drawable/border"
+        android:verticalSpacing="15dp"
+        android:layout_marginTop="15dp"
+        android:horizontalSpacing="15dp"
+        android:stretchMode="columnWidth"
+        android:layout_below="@+id/loc_btn"
+      />
+
+    <ImageButton
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        app:srcCompat="@drawable/lc"
+        android:id="@+id/pickup_btn"
+        android:scaleType="fitXY"
+        android:layout_marginTop="10dp"
+        android:background="@null"
+        android:layout_below="@+id/familygrid"
+        android:layout_marginLeft="80dp"
+        />
+    <TextView
+        android:text="luggage picked-up"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pickup_btn"
+        android:id="@+id/tv2"
+        android:layout_marginLeft="60dp"
+        android:textSize="11dp"/>
+
+    <ImageButton
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        app:srcCompat="@drawable/cou"
+        android:id="@+id/arrive_btn"
+        android:scaleType="fitXY"
+        android:layout_marginTop="10dp"
+        android:background="@null"
+        android:layout_below="@+id/familygrid"
+        android:layout_marginRight="80dp"
+        android:layout_alignParentRight="true"
+        />
+    <TextView
+        android:text="Arrived To Airport"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/arrive_btn"
+        android:id="@+id/tv3"
+        android:layout_marginRight="60dp"
+        android:layout_alignParentRight="true"
+        android:textSize="11dp"/>
+    <TextView
+        android:text=""
+        android:layout_width="400dp"
+        android:layout_height="2dp"
+        android:layout_below="@+id/tv3"
+        android:id="@+id/tv"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/border"
+        android:layout_alignParentRight="true"
+        android:textSize="11dp"/>
+    <ImageButton
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        app:srcCompat="@drawable/fli"
+        android:id="@+id/flight_btn"
+        android:scaleType="fitXY"
+        android:background="@null"
+        android:layout_below="@+id/tv3"
+        android:layout_marginTop="40dp"
+        />
+    <TextView
+        android:text="Flight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/scan_btn"
+        android:id="@+id/tv4"
+        android:layout_alignParentBottom="true"
+        android:textSize="12dp"/>
+    <ImageButton
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        app:srcCompat="@drawable/bar"
+        android:id="@+id/scan_btn"
+        android:scaleType="fitXY"
+        android:layout_below="@+id/tv3"
+        android:layout_marginTop="40dp"
+        android:layout_centerHorizontal="true"
+        android:background="@null"
+
+        />
+    <TextView
+        android:text="Scan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/scan_btn"
+        android:id="@+id/tv5"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:textSize="12dp"/>
+
+    <ImageButton
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        app:srcCompat="@drawable/pay"
+        android:id="@+id/pay_btn"
+        android:scaleType="fitXY"
+        android:layout_below="@+id/tv3"
+        android:layout_marginTop="40dp"
+        android:background="@null"
+        android:layout_alignParentRight="true"
+        />
+    <TextView
+        android:text="Payment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pay_btn"
+        android:id="@+id/tv6"
+      android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:textSize="12dp"/>
+
+
+</RelativeLayout>

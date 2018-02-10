@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.vip.abdr_app_a_d">
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="com.android.alarm.permission.SET_ALARM" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permision.CALL_PHONE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:hardwareAccelerated="false"
+        android:largeHeap="true"
+        android:supportsRtl="false"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".splash"
+            android:theme="@style/no_action">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <service android:name=".NotificationReciever" />
+
+
+        <receiver android:name=".bak">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+                <action android:name="android.net.wifi.WIFI_STATE_CHANGED" />
+            </intent-filter>
+        </receiver>
+
+        <activity android:name=".approvebooking" />
+        <activity android:name=".scan" >
+        <intent-filter>
+            <action android:name="com.google.zxing.client.android.SCAN" />
+            <category android:name="android.intent.category.DEFAULT" />
+        </intent-filter>
+        </activity>
+        <activity android:name=".login" />
+        <activity android:name=".recover" />
+        <activity android:name=".userinfo" />
+        <activity android:name=".mainsupport" />
+        <activity android:name=".supportinfo" />
+        <activity android:name=".addsupport" />
+        <activity android:name=".mainbookings" />
+        <activity android:name=".bookinginfo" />
+        <activity android:name=".current_booking" />
+        <activity android:name=".mainpage" />
+        <activity android:name=".payment"></activity>
+        //--------------------------------
+
+        <activity android:name=".Show_drivers" />
+        <activity android:name=".send_email" />
+        <activity android:name=".bookings" />
+        <activity android:name=".booking_info" />
+        <activity
+            android:name=".barcodes"
+            android:label="@string/title_activity_barcodes" />
+        <activity android:name=".support_answer" />
+
+        <activity android:name=".home" />
+
+        <activity android:name=".Show_support" />
+        <activity android:name=".support_info" />
+        <activity android:name=".Show_passengers" />
+        <activity android:name=".passenger_info" />
+        <activity android:name=".familymain" />
+        <activity android:name=".booking_support_info" />
+        <activity android:name=".p_payment" />
+        <activity android:name=".main_send_email" />
+        <activity android:name=".Add_driver" />
+        <activity android:name=".Add_admin" />
+        <activity android:name=".Show_admins"/>
+    </application>
+</manifest>

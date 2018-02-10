@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_approvebooking"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".approvebooking">
+
+    <TextView
+        android:text="Booking date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:id="@+id/tv"
+        tools:textAlignment="center"
+        tools:textSize="18sp" />
+    <TextView
+        android:text="TextView"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:id="@+id/bdate"
+        android:gravity="center"
+        tools:textAlignment="center"
+        android:background="@drawable/bordernobg"
+        android:layout_below="@id/tv"
+        android:inputType="textMultiLine"
+        />
+
+    <TextView
+        android:text="Booking time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:id="@+id/tv1"
+        android:layout_below="@id/bdate"
+        tools:textAlignment="center"
+        tools:textSize="18sp" />
+    <TextView
+        android:text="TextView"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:id="@+id/btime"
+        android:gravity="center"
+        tools:textAlignment="center"
+        android:background="@drawable/bordernobg"
+        android:layout_below="@id/tv1"
+        android:inputType="textMultiLine"
+        />
+    <TextView
+        android:text="Booking Location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:id="@+id/tv2"
+        android:layout_below="@id/btime"
+        tools:textAlignment="center"
+        tools:textSize="18sp" />
+    <TextView
+        android:text="TextView"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:id="@+id/blocation"
+        android:gravity="center"
+        tools:textAlignment="center"
+        android:background="@drawable/bordernobg"
+        android:inputType="textMultiLine"
+        android:scrollbars = "vertical"
+        android:layout_below="@+id/tv2"
+     android:layout_centerHorizontal="true"/>
+    <TextView
+        android:text="Location on map"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:id="@+id/tv3"
+        android:layout_below="@id/blocation"
+        tools:textAlignment="center"
+        tools:textSize="18sp" />
+    <ImageButton
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@null"
+        android:id="@+id/loc"
+        android:scaleType="fitXY"
+    android:layout_below="@id/tv3"
+        android:layout_marginTop="5dp"
+        android:layout_centerHorizontal="true"
+        app:srcCompat="@drawable/ma" />
+
+
+    <TextView
+        android:text="Number of travelares"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:id="@+id/tv4"
+        android:layout_below="@id/loc"
+        tools:textAlignment="center"
+        tools:textSize="18sp" />
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:id="@+id/bpnum"
+        android:gravity="center"
+        tools:textAlignment="center"
+        android:background="@drawable/bordernobg"
+        android:layout_below="@id/tv4"
+        android:inputType="textMultiLine"
+        />
+
+    <TextView
+        android:text="Number of luggage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:id="@+id/tv5"
+        android:layout_below="@id/bpnum"
+        tools:textAlignment="center"
+        tools:textSize="18sp" />
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:id="@+id/luggagenum"
+        android:gravity="center"
+        tools:textAlignment="center"
+        android:background="@drawable/bordernobg"
+        android:layout_below="@id/tv5"
+        android:inputType="textMultiLine"
+        />
+
+
+    <ImageButton
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@null"
+        android:id="@+id/nap"
+        android:scaleType="fitXY"
+        android:layout_alignParentBottom="true"
+       android:layout_marginLeft="80dp"
+        app:srcCompat="@drawable/nap" />
+
+    <ImageButton
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@null"
+        android:id="@+id/ap"
+        android:scaleType="fitXY"
+        android:layout_marginRight="80dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        app:srcCompat="@drawable/ap" />
+
+
+
+</RelativeLayout>

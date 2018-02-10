@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_add_driver"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".Add_driver">
+
+
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:id="@+id/btnregister"
+        app:srcCompat="@drawable/don"
+        android:layout_marginTop="490dp"
+        android:layout_marginLeft="220dp"/>
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:id="@+id/cans"
+        app:srcCompat="@drawable/c"
+        android:layout_marginTop="490dp"
+        android:layout_marginLeft="80dp"/>
+    <ScrollView
+        android:layout_width="350dp"
+        android:layout_height="480dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center">
+            <EditText
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:ems="10"
+                android:id="@+id/name"
+                android:hint="Name"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/border"
+                tools:textAlignment="center"
+                android:gravity="center"/>
+
+            <EditText
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:inputType="phone"
+                android:ems="10"
+                android:id="@+id/idno"
+                android:hint="National id number (111111111)"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/border"
+                tools:textAlignment="center"
+                android:layout_below="@+id/name"
+
+                android:gravity="center"/>
+
+            <EditText
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:ems="10"
+                android:id="@+id/nationality"
+                android:hint="Nationality"
+                android:background="@drawable/border"
+                tools:textAlignment="center"
+                android:gravity="center"
+                android:layout_marginTop="20dp"
+                android:layout_below="@+id/idno"/>
+
+
+
+            <ImageView android:id="@+id/button1"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:scaleType="fitXY"
+                app:srcCompat="@drawable/imid"
+                android:layout_marginTop="20dp"
+                android:layout_below="@+id/nationality"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"/>
+            <TextView
+                android:text="Capture\ndriver Photo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/button1"
+                android:layout_marginTop="10dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:gravity="center"
+                android:textAlignment="center"/>
+
+            <ImageView
+                android:id="@+id/imageview1"
+                android:layout_width="250dp"
+                android:layout_height="100dp"
+                android:scaleType="fitXY"
+                android:layout_marginTop="20dp"
+                android:layout_below="@+id/nationality"/>
+
+
+            <EditText
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress"
+                android:ems="10"
+                android:hint="Email(example@example.com)"
+                android:layout_below="@+id/imageview1"
+                android:layout_marginTop="20dp"
+                android:id="@+id/email"
+                android:background="@drawable/border"
+                tools:textAlignment="center"
+                android:gravity="center"/>
+
+            <EditText
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:inputType="phone"
+                android:ems="10"
+                android:hint="Phone(555555555)"
+                android:layout_below="@+id/email"
+                android:layout_marginTop="20dp"
+                android:id="@+id/phone"
+                android:background="@drawable/border"
+                tools:textAlignment="center"
+                android:gravity="center"/>
+
+            <Spinner
+                android:layout_width="350dp"
+                android:layout_height="20dp"
+                android:id="@+id/city"
+                android:background="@drawable/border"
+                tools:textAlignment="center"
+                android:layout_marginTop="20dp"
+                android:layout_below="@+id/phone"
+                android:entries="@array/list1"
+                />
+
+            <EditText
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:ems="10"
+                android:id="@+id/car_brand"
+                android:hint="Your Car Brand"
+                android:layout_marginTop="20dp"
+                android:layout_below="@+id/city"
+                android:background="@drawable/border"
+                tools:textAlignment="center"
+                android:gravity="center"/>
+
+            <EditText
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:id="@+id/car_color"
+                android:hint="Your Car Color"
+                android:layout_below="@+id/car_brand"
+
+                android:inputType="textPersonName"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/border"
+                tools:textAlignment="center"
+
+                android:gravity="center"/>
+
+            <EditText
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+
+                android:inputType="textPersonName"
+                android:ems="10"
+                android:id="@+id/p_n"
+                android:hint="Car Plate Number"
+                android:background="@drawable/border"
+                tools:textAlignment="center"
+                android:gravity="center"
+                android:layout_marginTop="20dp"
+                android:layout_below="@+id/car_color"/>
+
+            <EditText
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+
+                android:inputType="number"
+                android:ems="10"
+                android:id="@+id/m_c"
+                android:hint="Maximum Capacity Luggage"
+                android:background="@drawable/border"
+                tools:textAlignment="center"
+                android:gravity="center"
+                android:layout_marginTop="20dp"
+                android:layout_below="@+id/p_n"/>
+
+
+            <EditText
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:ems="10"
+                android:id="@+id/username"
+                android:hint="Username"
+                android:background="@drawable/border"
+                tools:textAlignment="center"
+                android:gravity="center"
+                android:layout_marginTop="30dp"
+                android:layout_below="@+id/m_c" />
+            <EditText
+                android:layout_width="350dp"
+                android:layout_height="20dp"
+                android:inputType="textPassword"
+                android:ems="10"
+                android:layout_below="@+id/username"
+                android:layout_marginTop="20dp"
+                android:id="@+id/password"
+                android:hint="Password"
+                android:background="@drawable/border"
+                tools:textAlignment="center"
+                android:gravity="center"/>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>
